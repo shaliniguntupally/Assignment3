@@ -2,19 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-# Load the data
 data = pd.read_csv('your_data_file.csv')
-
-# a) Random Sample
 seed = 42  # set seed for reproducibility
 sample = data.sample(25, random_state=seed)
-
-# Calculate mean and highest values for Glucose in the sample
 sample_mean_glucose = sample['Glucose'].mean()
 sample_highest_glucose = sample['Glucose'].max()
-
-# Compare with population statistics
 population_mean_glucose = data['Glucose'].mean()
 population_highest_glucose = data['Glucose'].max()
 
