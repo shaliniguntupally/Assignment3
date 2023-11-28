@@ -1,4 +1,3 @@
-# b) 98th Percentile of BMI
 sample_98th_percentile_bmi = np.percentile(sample['BMI'], 98)
 population_98th_percentile_bmi = np.percentile(data['BMI'], 98)
 
